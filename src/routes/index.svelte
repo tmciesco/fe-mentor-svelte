@@ -1,5 +1,5 @@
 <script context="module" lang="ts">
-  export const prerender = true;
+  // export const prerender = true;
 </script>
 
 <script lang="ts">
@@ -13,14 +13,11 @@
 
 <section>
   <div class="welcome">
-    <picture>
-      <source srcset="svelte-welcome.webp" type="image/webp" />
-      <img src="svelte-welcome.png" alt="Welcome" />
-    </picture>
+    <div>A site for Frontend Mentor challenges.</div>
   </div>
 </section>
 
-<style>
+<style lang="scss">
   section {
     display: flex;
     flex-direction: column;
@@ -30,17 +27,9 @@
   }
 
   .welcome {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding: 0 0 calc(100% * 495 / 2048) 0;
-  }
-
-  .welcome img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    display: block;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 </style>

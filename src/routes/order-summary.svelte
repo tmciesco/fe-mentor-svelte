@@ -13,12 +13,16 @@
   {#if isLoaded}
     <div class="card" in:fly={{ y: 100 }}>
       <div class="img-container">
-        <img src="images/illustration-hero.svg" alt="Illustrated woman dancing with headphones on" />
+        <img
+          src="images/illustration-hero.svg"
+          alt="Illustrated woman dancing with headphones on"
+        />
       </div>
       <div class="content-container">
         <h1 class="title">Order Summary</h1>
         <p class="description">
-          You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
+          You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere
+          you like!
         </p>
         <div class="plan">
           <div style="flex-grow: 1; display: flex; align-items: center;">
@@ -26,10 +30,10 @@
               <img src="images/icon-music.svg" alt="music icon" />
             </div>
             <div class="plan__details">
-            <span class="plan__type">Annual Plan</span>
-            <span class="plan__price">$59.99 / year</span>
+              <span class="plan__type">Annual Plan</span>
+              <span class="plan__price">$59.99 / year</span>
+            </div>
           </div>
-        </div>
           <span class="plan__update">Change</span>
         </div>
         <button class="btn btn--primary">Proceed to Payment</button>
@@ -45,13 +49,13 @@
   </div>
 </main>
 
-<style>
+<style lang="scss">
   p {
     margin: 0;
     padding: 0;
   }
   main {
-    background-color: #E0E8FF;
+    background-color: #e0e8ff;
     min-height: 100vh;
     text-align: center;
     display: flex;
@@ -84,7 +88,7 @@
   .plan {
     display: flex;
     border-radius: 12px;
-    background-color: #F7F9FF;
+    background-color: #f7f9ff;
     padding: 24px;
     margin-bottom: 32px;
     align-items: center;
@@ -102,19 +106,19 @@
 
   .plan__type {
     font-weight: 900;
-    color: #1F2E55;
+    color: #1f2e55;
     margin-bottom: 4px;
     text-align: left;
   }
 
   .plan__price {
     font-weight: 500;
-    color: #717FA6;
+    color: #717fa6;
   }
 
   .plan__update {
     font-weight: 700;
-    color: #382AE1;
+    color: #382ae1;
     text-decoration: underline;
     cursor: pointer;
   }
@@ -128,7 +132,7 @@
 
   .btn--primary {
     color: #ffffff;
-    background-color: #382AE1;
+    background-color: #382ae1;
     box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
     padding: 16px;
     border-radius: 12px;
@@ -136,7 +140,7 @@
   }
 
   .btn--secondary {
-    color: #717FA6;
+    color: #717fa6;
     background: none;
   }
   img {
@@ -151,7 +155,7 @@
     font-size: 28px;
     font-weight: 900;
     margin-bottom: 16px;
-    color: #1F2E55;
+    color: #1f2e55;
   }
 
   .description {

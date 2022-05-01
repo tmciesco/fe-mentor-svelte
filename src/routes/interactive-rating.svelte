@@ -68,7 +68,7 @@
   </div>
 </main>
 
-<style>
+<style lang="scss">
   p {
     margin: 0;
     padding: 0;
