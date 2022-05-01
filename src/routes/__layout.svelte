@@ -4,7 +4,7 @@
 	let isDrawerOpen: boolean = false;
 	import { fade, fly } from 'svelte/transition';
 
-	let duration = 200
+	let duration = 350
 
 	function toggleDrawer() {
 		setTimeout(() => {
@@ -32,7 +32,7 @@
 		<li><a on:click={toggleDrawer} href="/stats-preview-card">stats-preview-card</a></li>
 	</ul>
 </div>
-<div class="overlay" in:fade={{duration}} out:fade={{duration}}></div>
+<div class="overlay" in:fade={{duration: duration - 100}} out:fade={{duration: duration - 100}}></div>
 {/if}
 
 <style>
