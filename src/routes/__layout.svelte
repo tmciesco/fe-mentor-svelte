@@ -28,6 +28,7 @@
 		<li><a on:click={toggleDrawer} href="/">Home</a></li>
 		<li><a on:click={toggleDrawer} href="https://github.com/tmciesco/fe-mentor-svelte">Github</a></li>
 		<li><a on:click={toggleDrawer} href="/interactive-rating">interactive-rating</a></li>
+		<li><a on:click={toggleDrawer} href="/order-summary">order-summary</a></li>
 		<li><a on:click={toggleDrawer} href="/qr-code">qr-code</a></li>
 		<li><a on:click={toggleDrawer} href="/stats-preview-card">stats-preview-card</a></li>
 	</ul>
