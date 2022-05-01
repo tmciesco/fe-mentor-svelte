@@ -7,14 +7,15 @@
 
 	<ul>
 		<li><a href="/">Home</a></li>
-		<li><a href="/interactive-rating-component">interactive-rating-component</a></li>
-		<li><a href="/qr-code-component">qr-code-component</a></li>
+		<li><a href="/interactive-rating">interactive-rating</a></li>
+		<li><a href="/qr-code">qr-code</a></li>
+		<li><a href="/stats-preview-card">stats-preview-card</a></li>
 	</ul>
 
 <style>
 ul {
 	position: absolute;
-	bottom: 16px;
+	top: 16px;
 	left: 16px;
 }
 </style>
