@@ -32,6 +32,9 @@
   },
   "type": "module",
   "dependencies": {
+    "@fontsource/barlow": "^4.5.7",
+    "@fontsource/barlow-condensed": "^4.5.7",
+    "@fontsource/bellefair": "^4.5.8",
     "@fontsource/fira-mono": "^4.5.0",
     "@lukeed/uuid": "^2.0.0",
     "cookie": "^0.4.1"

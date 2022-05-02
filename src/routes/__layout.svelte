@@ -23,6 +23,7 @@
     { href: '/order-summary', text: 'Order Summary' },
     { href: '/nft-preview-card', text: 'NFT Preview Card' },
     { href: '/qr-code', text: 'QR Code' },
+    { href: '/space-tours', text: 'Space Tours' },
     { href: '/stats-preview-card', text: 'Stats Preview Card' }
   ];
 </script>

@@ -38,6 +38,21 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fontsource/barlow-condensed@^4.5.7":
+  version "4.5.7"
+  resolved "https://registry.yarnpkg.com/@fontsource/barlow-condensed/-/barlow-condensed-4.5.7.tgz#db2cea4ccae4b529808f78b1b8596009fb365d08"
+  integrity sha512-q+TzwHy8mWaLn4VbvuHL8H0TEaI3xl4xeOiCdp23XXRdrKfQyqefHmO5e8nbndgBtqglgWklLt3weWb/GnZg2Q==
+
+"@fontsource/barlow@^4.5.7":
+  version "4.5.7"
+  resolved "https://registry.yarnpkg.com/@fontsource/barlow/-/barlow-4.5.7.tgz#2739217b258887002f07151f0476bddf1058fca7"
+  integrity sha512-1NliOxBjbipalO47kOv6ailiL80+BtO6bbyKtR/9KloOffxDTsPR9MhNjRlje+Y3PSk0XkW44qe8ZRDJ7jWsUA==
+
+"@fontsource/bellefair@^4.5.8":
+  version "4.5.8"
+  resolved "https://registry.yarnpkg.com/@fontsource/bellefair/-/bellefair-4.5.8.tgz#f63d60c5a7d489d245c65926d8e8b0e707e46e7a"
+  integrity sha512-W2wlDOJ8BqOv9D6LGNocNAN30qFwLSdesyNREWcVFiax8NzArUe/EIITpZGGegox9OPtpayyu+4/CRzUsUjlbQ==
+
 "@fontsource/fira-mono@^4.5.0":
   version "4.5.8"
   resolved "https://registry.npmjs.org/@fontsource/fira-mono/-/fira-mono-4.5.8.tgz"
