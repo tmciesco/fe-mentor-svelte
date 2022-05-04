@@ -1,31 +1,33 @@
 <script lang="ts">
-  import Header from '$lib/header/Header.svelte';
-  import '../app.css';
-  let isDrawerOpen: boolean = false;
-  import { fade, fly } from 'svelte/transition';
+  import Header from "$lib/header/Header.svelte"
+  import "../app.css"
+  let isDrawerOpen: boolean = false
+  import { fade, fly } from "svelte/transition"
 
-  let duration = 350;
+  let duration = 350
 
   function toggleDrawer() {
     setTimeout(
       () => {
-        window.document.body.classList.toggle('open-drawer');
+        window.document.body.classList.toggle("open-drawer")
       },
       isDrawerOpen ? duration + 100 : 0
-    );
-    isDrawerOpen = !isDrawerOpen;
+    )
+    isDrawerOpen = !isDrawerOpen
   }
 
   const links = [
-    { href: '/', text: 'Home' },
-    { href: 'https://github.com/tmciesco/fe-mentor-svelt', text: 'Github' },
-    { href: '/interactive-rating', text: 'Interactive Rating' },
-    { href: '/order-summary', text: 'Order Summary' },
-    { href: '/nft-preview-card', text: 'NFT Preview Card' },
-    { href: '/qr-code', text: 'QR Code' },
-    { href: '/space-tours', text: 'Space Tours' },
-    { href: '/stats-preview-card', text: 'Stats Preview Card' }
-  ];
+    { href: "/", text: "Home" },
+    { href: "https://github.com/tmciesco/fe-mentor-svelt", text: "Github" },
+    { href: "/component-examples/article-preview", text: "Article Preview" },
+    { href: "/component-examples/interactive-rating", text: "Interactive Rating" },
+    { href: "/component-examples/order-summary", text: "Order Summary" },
+    { href: "/component-examples/nft-preview-card", text: "NFT Preview Card" },
+    { href: "/component-examples/profile-card", text: "Profile Card" },
+    { href: "/component-examples/qr-code", text: "QR Code" },
+    { href: "/space-tours", text: "Space Tours" },
+    { href: "/component-examples/stats-preview-card", text: "Stats Preview Card" }
+  ]
 </script>
 
 <button on:click={toggleDrawer}>
@@ -66,6 +68,7 @@
     display: flex;
     align-items: center;
     padding: 8px;
+    z-index: 1;
   }
   i {
     color: #141883;

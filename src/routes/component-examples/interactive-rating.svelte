@@ -1,22 +1,22 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
-  import { fly } from 'svelte/transition';
-  let rating: number;
-  let submitSuccess: boolean = false;
-  let isSubmitting: boolean = false;
-  let isLoaded: boolean = false;
+  import { onMount } from "svelte"
+  import { fly } from "svelte/transition"
+  let rating: number
+  let submitSuccess: boolean = false
+  let isSubmitting: boolean = false
+  let isLoaded: boolean = false
   function handleOnSubmit(e: any) {
-    e.preventDefault();
-    isSubmitting = true;
-    console.log(`Your rating is ${rating}`);
+    e.preventDefault()
+    isSubmitting = true
+    console.log(`Your rating is ${rating}`)
     setTimeout(() => {
-      isSubmitting = false;
-      submitSuccess = true;
-    }, 1500);
+      isSubmitting = false
+      submitSuccess = true
+    }, 1500)
   }
   onMount(() => {
-    isLoaded = true;
-  });
+    isLoaded = true
+  })
 </script>
 
 <main>
@@ -24,7 +24,7 @@
     <div class="card" in:fly={{ y: 100 }}>
       {#if !submitSuccess}
         <span class="icon">
-          <img src="images/icon-star.svg" alt="star icon" />
+          <img src="../images/icon-star.svg" alt="star icon" />
         </span>
         <h1 class="title">How did we do?</h1>
         <p class="description">
@@ -44,12 +44,12 @@
             class="btn"
             type="submit"
             class:disabled={isSubmitting || !rating}
-            disabled={isSubmitting || !rating}>{isSubmitting ? 'Submitting...' : 'Submit'}</button
+            disabled={isSubmitting || !rating}>{isSubmitting ? "Submitting..." : "Submit"}</button
           >
         </form>
       {:else}
         <div class="result-container">
-          <img src="images/illustration-thank-you.svg" alt="thank you illustration" />
+          <img src="../images/illustration-thank-you.svg" alt="thank you illustration" />
           <div class="result">You selected {rating} out of 5</div>
         </div>
         <h1 class="title thank-you">Thank you!</h1>
@@ -122,7 +122,7 @@
     margin-bottom: 30px;
   }
 
-  input[type='radio'] {
+  input[type="radio"] {
     display: none;
   }
 

@@ -1,19 +1,19 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
-  import { fly } from 'svelte/transition';
+  import { onMount } from "svelte"
+  import { fly } from "svelte/transition"
 
-  let isLoaded: boolean = false;
+  let isLoaded: boolean = false
 
   onMount(() => {
-    isLoaded = true;
-  });
+    isLoaded = true
+  })
 </script>
 
 <main>
   {#if isLoaded}
     <div class="card" in:fly={{ y: 100 }}>
       <div class="img-container">
-        <img src="images/image-qr-code.png" alt="Frontend Mentor QR Code" />
+        <img src="../images/image-qr-code.png" alt="Frontend Mentor QR Code" />
       </div>
       <h1 class="title">Improve your frontend skills by building projects</h1>
       <p class="description">

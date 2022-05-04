@@ -1,12 +1,12 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
-  import { fly } from 'svelte/transition';
+  import { onMount } from "svelte"
+  import { fly } from "svelte/transition"
 
-  let isLoaded: boolean = false;
+  let isLoaded: boolean = false
 
   onMount(() => {
-    isLoaded = true;
-  });
+    isLoaded = true
+  })
 </script>
 
 <main>
@@ -36,7 +36,7 @@
         </div>
       </div>
       <div class="img-container">
-        <img src="images/stats-image-header.jpg" alt="three women working at table" />
+        <img src="../images/stats-image-header.jpg" alt="three women working at table" />
       </div>
     </div>
   {/if}

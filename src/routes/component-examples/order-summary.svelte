@@ -1,12 +1,12 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
-  import { fly } from 'svelte/transition';
+  import { onMount } from "svelte"
+  import { fly } from "svelte/transition"
 
-  let isLoaded: boolean = false;
+  let isLoaded: boolean = false
 
   onMount(() => {
-    isLoaded = true;
-  });
+    isLoaded = true
+  })
 </script>
 
 <main>
@@ -14,7 +14,7 @@
     <div class="card" in:fly={{ y: 100 }}>
       <div class="img-container">
         <img
-          src="images/illustration-hero.svg"
+          src="../images/illustration-hero.svg"
           alt="Illustrated woman dancing with headphones on"
         />
       </div>
